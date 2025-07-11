@@ -1,4 +1,4 @@
-from openvino import OVWanPipeline, OVStableVideoDiffusionPipeline, OVOuteTTS
+from ov_pipe import OVWanPipeline, OVStableVideoDiffusionPipeline, OVOuteTTS
 
 from transformers import AutoTokenizer, CLIPImageProcessor
 from pathlib import Path
