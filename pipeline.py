@@ -1,15 +1,14 @@
 from ov_pipe import OVWanPipeline, OVStableVideoDiffusionPipeline, OVOuteTTS
-
-from transformers import AutoTokenizer, CLIPImageProcessor
-from pathlib import Path
-from diffusers.utils import load_image, export_to_video
-from openvino.stable_video_diffusion.lcm_scheduler import (
+from ov_pipe.stable_video_diffusion.lcm_scheduler import (
     AnimateLCMSVDStochasticIterativeScheduler,
 )
-import openvino as ov
+from transformers import AutoTokenizer, CLIPImageProcessor
+from diffusers.utils import load_image, export_to_video
 import torch
+import openvino as ov
 from optimum.intel.openvino import OVModelForCausalLM
 from movie import concat_video_audio
+from pathlib import Path
 
 
 class OVPipeline:
