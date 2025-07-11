@@ -1,0 +1,3 @@
+from ov_stable_video_diffusion_helper import convert_stable_video_diffusion
+
+convert_stable_video_diffusion()

@@ -1,0 +1,6 @@
+__pycache__
+/output/*
+/models/*
+
+!.gitkeep
+!put_model_weights_here
