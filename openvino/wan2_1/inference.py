@@ -1,14 +1,16 @@
 from ov_wan_helper import OVWanPipeline
 from diffusers.utils import export_to_video
+from pathlib import Path
 
+# GPU和NPU会报错
+device = "CPU"
 
-device = "GPU"
 device_map = {
     "transformer": device,
     "text_encoder": device,
     "vae": device,
 }
-
+model_dir = Path("../../models/wan2_1_ov")
 ov_pipe = OVWanPipeline(model_dir, device_map)
 
 prompt = "A cat walks on the grass, realistic"
