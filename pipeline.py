@@ -15,7 +15,7 @@ class OVPipeline:
     def __init__(self, device: str = "GPU") -> None:
         self.device = device
 
-        # self._load_llm()
+        self._load_llm()
         self._load_tts()
         self._load_t2v()
         self._load_i2v()
@@ -79,10 +79,10 @@ class OVPipeline:
         # if self.t2v == "":
         #     raise ValueError("Video model not loaded.")
         # llm
-        # inputs = self.tokenizer(prompt, return_tensors="pt")
-        # outputs = self.llm.generate(**inputs, max_length=200)
-        # text = self.tokenizer.batch_decode(outputs)[0]
-        # print(text)
+        inputs = self.tokenizer(prompt, return_tensors="pt")
+        outputs = self.llm.generate(**inputs, max_length=200)
+        text = self.tokenizer.batch_decode(outputs)[0]
+        print(text)
         # tts
         tts_output = self.tts.generate(
             text=prompt,

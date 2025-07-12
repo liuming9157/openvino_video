@@ -1,8 +1,16 @@
+# temp files
 __pycache__
+python
+
+# model or cache
+/models/outetts_ov/model_cache/*
+*.cl_cache
 *.json
 *.model
 *.bin
 *.xml
+
+# output
 *.wav
 *.mp3
 *.mp4
