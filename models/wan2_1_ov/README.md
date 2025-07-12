@@ -11,7 +11,8 @@ tags:
 - int4
 ---
 # OpenVINO可使用的Wan2.1-T2V-1.3B-Diffusers-int4
-原模型：stabilityai/stable-video-diffusion-img2vid-xt  
+原模型：Wan-AI/Wan2.1-T2V-1.3B-Diffusers  
+模型下载链接：https://huggingface.co/liuming9157/Wan2.1-T2V-1.3B-Diffusers-ov-int4
 转换脚本：https://github.com/liuming9157/openvino_video/blob/master/openvino/wan2_1/convert.py   
 推理脚本：https://github.com/liuming9157/openvino_video/blob/master/openvino/wan2_1/inference.py  
 联系方式：liuming@mzsat.cn  
